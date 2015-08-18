@@ -42,31 +42,3 @@ if __name__ == '__main__':
     verse_grab = BibleVerseGrabber()
 
     verse_grab._make_request()
-
-# class ESVSession:
-#     def __init__(self, key):
-#         options = ['include-short-copyright=0',
-#                    'output-format=plain-text',
-#                    'include-passage-horizontal-lines=0',
-#                    'include-heading-horizontal-lines=0']
-#         self.options = '&'.join(options)
-#         self.baseUrl = http://www.esvapi.org/v2/rest/passageQuery?key=IP
-
-#     def doPassageQuery(self, passage):
-#         passage = passage.split()
-#         passage = '+'.join(passage)
-#         url = self.baseUrl + '&passage=%s&%s' % (passage, self.options)
-#         page = urllib.urlopen(url)
-#         return page.read()
-
-# try:
-#     key = sys.argv[1]
-# except IndexError:
-#     key = 'IP'
-
-# bible = ESVSession(key)
-
-# passage = raw_input('Enter Passage: ')
-# while passage != 'quit':
-#     print bible.doPassageQuery(passage)
-#     passage = raw_input('Enter Passage: ')
