@@ -1,5 +1,5 @@
 # TerminalBibleVerse
-Grabs a Bible verse.
+Grabs a Bible verse through http://www.esvapi.org/.
 
 Changing the path to the repo and adding the following lines to a .zshrc file will load a Bible verse on termial load. 
 
